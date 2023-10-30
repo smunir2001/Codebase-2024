@@ -12,6 +12,7 @@ import pandas as pd
 # from sklearn.compose import ColumnTransformer
 # from sklearn.preprocessing import OneHotEncoder
 # from sklearn.preprocessing import LabelEncoder
+# from sklearn.model_selection import train_test_split
 
 # Importing the dataset
 dataset = pd.read_csv('./data/Data.csv')
@@ -43,3 +44,11 @@ from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 y = le.fit_transform(y)
 print('\ny -->\n', y)
+
+# Splitting the data set into the Training set & Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+print('\nX_train -->\n', X_train)
+print('\nX_test -->\n', X_test)
+print('\ny_train -->\n', y_train)
+print('\ny_test -->\n', y_test)
