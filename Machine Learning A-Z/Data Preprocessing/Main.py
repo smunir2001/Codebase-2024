@@ -9,6 +9,8 @@ print('\nData Preprocessing')
 import pandas as pd
 # from sklearn.impute import SimpleImputer
 # import numpy as np
+# from sklearn.compose import ColumnTransformer
+# from sklearn.preprocessing import OneHotEncoder
 
 # Importing the dataset
 dataset = pd.read_csv('./data/Data.csv')
@@ -27,3 +29,11 @@ imputer = SimpleImputer(missing_values=np.nan, strategy='mean')
 imputer.fit(X[:, 1:3]) # capture all numerical valued columns (exclude any text valued columns)
 X[:, 1:3] = imputer.transform(X[:, 1:3]) # updating the numerical valued columns in matrix of features X
 print('\nupdated X -->\n', X)
+
+# Encoding categorical data
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+# - Encoding the independent variable
+ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')
+X = np.array(ct.fit_transform(X))
+print('\nX -->\n', X)
