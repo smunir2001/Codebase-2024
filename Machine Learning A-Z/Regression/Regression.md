@@ -11,5 +11,5 @@ y_i is the actual data point. y_j is the linear regression predictions for y_i.
 
 __Residual__ = E_i = y_j - y_i
 
-y_i = b_0 + (b_1(X_1))
+y_i = b_0 + (b_1(X_1)) --> b_0, b_1 such that SUM(y_j - y_i) ^ 2 is minimized.
 
