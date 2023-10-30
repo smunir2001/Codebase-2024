@@ -20,3 +20,11 @@ X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
 print('\nX -->\n', X)
 print('\ny -->\n', y)
+
+# Splitting the dataset into the Training set & Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=1/3, random_state=0)
+print('\nX_train -->\n', X_train)
+print('\nX_test -->\n', X_test)
+print('\ny_train -->\n', y_train)
+print('\ny_test -->\n', y_test)
