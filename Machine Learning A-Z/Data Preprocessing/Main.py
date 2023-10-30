@@ -13,6 +13,7 @@ import pandas as pd
 # from sklearn.preprocessing import OneHotEncoder
 # from sklearn.preprocessing import LabelEncoder
 # from sklearn.model_selection import train_test_split
+# from sklearn.preprocessing import StandardScaler
 
 # Importing the dataset
 dataset = pd.read_csv('./data/Data.csv')
@@ -52,3 +53,11 @@ print('\nX_train -->\n', X_train)
 print('\nX_test -->\n', X_test)
 print('\ny_train -->\n', y_train)
 print('\ny_test -->\n', y_test)
+
+# Feature scaling
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])
+print('\nX_train -->\n', X_train)
+X_test[:, 3:] = sc.transform(X_test[:, 3:])
+print('\nX_test -->\n', X_test)
