@@ -37,3 +37,11 @@ LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None)
 
 # Predicting the Test set results
 y_pred = regressor.predict(X_test)
+
+# Visualizing the Training set results
+plt.scatter(X_train, y_train, color='red')
+plt.plot(X_train, regressor.predict(X_train), color='blue')
+plt.title('Salary vs Experience (Training Set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
