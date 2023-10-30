@@ -34,3 +34,6 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
 LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None)
+
+# Predicting the Test set results
+y_pred = regressor.predict(X_test)
