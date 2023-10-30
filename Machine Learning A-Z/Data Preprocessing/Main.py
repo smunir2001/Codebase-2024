@@ -11,6 +11,7 @@ import pandas as pd
 # import numpy as np
 # from sklearn.compose import ColumnTransformer
 # from sklearn.preprocessing import OneHotEncoder
+# from sklearn.preprocessing import LabelEncoder
 
 # Importing the dataset
 dataset = pd.read_csv('./data/Data.csv')
@@ -37,3 +38,8 @@ from sklearn.preprocessing import OneHotEncoder
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')
 X = np.array(ct.fit_transform(X))
 print('\nX -->\n', X)
+# - Encoding the dependent variable vector
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+y = le.fit_transform(y)
+print('\ny -->\n', y)
