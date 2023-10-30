@@ -28,3 +28,9 @@ print('\nX_train -->\n', X_train)
 print('\nX_test -->\n', X_test)
 print('\ny_train -->\n', y_train)
 print('\ny_test -->\n', y_test)
+
+# Training the Simple Linear Regression model on the training set
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None)
