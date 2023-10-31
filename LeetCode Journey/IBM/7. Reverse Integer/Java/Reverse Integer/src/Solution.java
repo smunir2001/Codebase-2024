@@ -5,8 +5,8 @@ public class Solution {
      * Solution -
      * Time complexity:
      * Space complexity:
-     * Runtime: ms
-     * Memory: MB
+     * Runtime: 1ms
+     * Memory: 40.26MB
      */
     public int reverse(int x) {
         int reversed = 0;
