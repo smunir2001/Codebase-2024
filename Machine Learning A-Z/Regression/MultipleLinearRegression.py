@@ -27,3 +27,11 @@ from sklearn.preprocessing import OneHotEncoder
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [3])], remainder='passthrough')
 X = np.array(ct.fit_transform(X))
 print('\nX -->\n', X)
+
+# Splitting the dataset into the Training set & Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+print('\nX_train -->\n', X_train)
+print('\nX_test -->\n', X_test)
+print('\ny_train -->\n', y_train)
+print('\ny_test -->\n', y_test)
