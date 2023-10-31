@@ -13,3 +13,5 @@ __Residual__ = E_i = y_j - y_i
 
 y_i = b_0 + (b_1(X_1)) --> b_0, b_1 such that SUM(y_j - y_i) ^ 2 is minimized.
 
+### Multiple Linear Regression
+Same as linear regression, however we'll have more than one feature.
