@@ -1,0 +1,14 @@
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/bin/Debug/net7.0/Object Oriented Programming
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/bin/Debug/net7.0/Object Oriented Programming.deps.json
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/bin/Debug/net7.0/Object Oriented Programming.runtimeconfig.json
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/bin/Debug/net7.0/Object Oriented Programming.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/bin/Debug/net7.0/Object Oriented Programming.pdb
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/obj/Debug/net7.0/Object Oriented Programming.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/obj/Debug/net7.0/Object Oriented Programming.AssemblyInfoInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/obj/Debug/net7.0/Object Oriented Programming.AssemblyInfo.cs
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/obj/Debug/net7.0/Object Oriented Programming.csproj.CoreCompileInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/obj/Debug/net7.0/Object Oriented Programming.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/obj/Debug/net7.0/refint/Object Oriented Programming.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/obj/Debug/net7.0/Object Oriented Programming.pdb
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/obj/Debug/net7.0/Object Oriented Programming.genruntimeconfig.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Object Oriented Programming OOP/Object Oriented Programming/obj/Debug/net7.0/ref/Object Oriented Programming.dll

@@ -1,0 +1,28 @@
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World.deps.json
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World.runtimeconfig.json
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World.pdb
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.AssemblyInfoInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.AssemblyInfo.cs
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.csproj.CoreCompileInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/obj/Debug/net7.0/refint/Hello World.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.pdb
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.genruntimeconfig.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Hello World - C#/Hello World/obj/Debug/net7.0/ref/Hello World.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World.deps.json
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World.runtimeconfig.json
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/bin/Debug/net7.0/Hello World.pdb
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.AssemblyInfoInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.AssemblyInfo.cs
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.csproj.CoreCompileInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/obj/Debug/net7.0/refint/Hello World.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.pdb
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/obj/Debug/net7.0/Hello World.genruntimeconfig.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Hello World - C#/Hello World/obj/Debug/net7.0/ref/Hello World.dll

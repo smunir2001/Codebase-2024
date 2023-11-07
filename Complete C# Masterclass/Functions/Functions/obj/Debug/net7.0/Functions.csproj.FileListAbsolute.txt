@@ -1,0 +1,14 @@
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/bin/Debug/net7.0/Functions
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/bin/Debug/net7.0/Functions.deps.json
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/bin/Debug/net7.0/Functions.runtimeconfig.json
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/bin/Debug/net7.0/Functions.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/bin/Debug/net7.0/Functions.pdb
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/obj/Debug/net7.0/Functions.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/obj/Debug/net7.0/Functions.AssemblyInfoInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/obj/Debug/net7.0/Functions.AssemblyInfo.cs
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/obj/Debug/net7.0/Functions.csproj.CoreCompileInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/obj/Debug/net7.0/Functions.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/obj/Debug/net7.0/refint/Functions.dll
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/obj/Debug/net7.0/Functions.pdb
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/obj/Debug/net7.0/Functions.genruntimeconfig.cache
+/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Functions/Functions/obj/Debug/net7.0/ref/Functions.dll
