@@ -1,0 +1,14 @@
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/bin/Debug/net7.0/Face Detector
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/bin/Debug/net7.0/Face Detector.deps.json
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/bin/Debug/net7.0/Face Detector.runtimeconfig.json
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/bin/Debug/net7.0/Face Detector.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/bin/Debug/net7.0/Face Detector.pdb
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/obj/Debug/net7.0/Face Detector.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/obj/Debug/net7.0/Face Detector.AssemblyInfoInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/obj/Debug/net7.0/Face Detector.AssemblyInfo.cs
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/obj/Debug/net7.0/Face Detector.csproj.CoreCompileInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/obj/Debug/net7.0/Face Detector.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/obj/Debug/net7.0/refint/Face Detector.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/obj/Debug/net7.0/Face Detector.pdb
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/obj/Debug/net7.0/Face Detector.genruntimeconfig.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Detection/Face Detector/obj/Debug/net7.0/ref/Face Detector.dll
