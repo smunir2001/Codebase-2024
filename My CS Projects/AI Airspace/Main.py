@@ -92,7 +92,7 @@ while running:
             running = False
 
     # Generate new aircraft if needed
-    if len(active_aircraft) < 2:
+    if len(active_aircraft) < 3:
         available_flight_numbers = [fn for fn in flight_numbers if fn not in [aircraft.flight_number for aircraft in active_aircraft]]
         if available_flight_numbers:
             flight_number = random.choice(available_flight_numbers)
