@@ -41,6 +41,10 @@
             "OpenCvSharp4": {
               "target": "Package",
               "version": "[4.8.0.20230708, )"
+            },
+            "OpenCvSharp4Extern": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

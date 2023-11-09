@@ -19,6 +19,15 @@
           }
         }
       },
+      "OpenCvSharp4Extern/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/OpenCvSharpExtern.dll": {}
+        },
+        "runtime": {
+          "lib/OpenCvSharpExtern.dll": {}
+        }
+      },
       "System.Memory/4.5.5": {
         "type": "package",
         "compile": {
@@ -64,6 +73,18 @@
         "lib/netstandard2.1/OpenCvSharp.xml",
         "opencvsharp4.4.8.0.20230708.nupkg.sha512",
         "opencvsharp4.nuspec"
+      ]
+    },
+    "OpenCvSharp4Extern/1.0.0": {
+      "sha512": "o1T21JVC95MvBbRd6ElMy0e395+FgU4KihKbzSpK3EMw44VB735kJEOKu3yXm/dOCPQd8ceDuQeuAMhuqbTuhQ==",
+      "type": "package",
+      "path": "opencvsharp4extern/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/OpenCvSharpExtern.dll",
+        "opencvsharp4extern.1.0.0.nupkg.sha512",
+        "opencvsharp4extern.nuspec"
       ]
     },
     "System.Memory/4.5.5": {
@@ -117,7 +138,8 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "OpenCvSharp4 >= 4.8.0.20230708"
+      "OpenCvSharp4 >= 4.8.0.20230708",
+      "OpenCvSharp4Extern >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -160,6 +182,10 @@
           "OpenCvSharp4": {
             "target": "Package",
             "version": "[4.8.0.20230708, )"
+          },
+          "OpenCvSharp4Extern": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [
@@ -181,5 +207,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.402/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenCvSharp4Extern 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenCvSharp4Extern",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

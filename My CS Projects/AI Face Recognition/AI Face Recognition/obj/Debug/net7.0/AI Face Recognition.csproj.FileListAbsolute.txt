@@ -15,3 +15,4 @@
 /Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/bin/Debug/net7.0/OpenCvSharp.dll
 /Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.csproj.AssemblyReference.cache
 /Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.csproj.CopyComplete
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/bin/Debug/net7.0/OpenCvSharpExtern.dll
