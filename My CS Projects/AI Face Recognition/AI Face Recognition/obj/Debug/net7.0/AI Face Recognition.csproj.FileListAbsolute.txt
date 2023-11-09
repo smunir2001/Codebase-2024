@@ -1,0 +1,17 @@
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/bin/Debug/net7.0/AI Face Recognition
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/bin/Debug/net7.0/AI Face Recognition.deps.json
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/bin/Debug/net7.0/AI Face Recognition.runtimeconfig.json
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/bin/Debug/net7.0/AI Face Recognition.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/bin/Debug/net7.0/AI Face Recognition.pdb
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.AssemblyInfoInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.AssemblyInfo.cs
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.csproj.CoreCompileInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/refint/AI Face Recognition.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.pdb
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.genruntimeconfig.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/ref/AI Face Recognition.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/bin/Debug/net7.0/OpenCvSharp.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.csproj.AssemblyReference.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/My CS Projects/AI Face Recognition/AI Face Recognition/obj/Debug/net7.0/AI Face Recognition.csproj.CopyComplete
