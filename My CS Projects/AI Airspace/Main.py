@@ -10,6 +10,9 @@ import pygame
 import random
 import math
 
+# Variable to control maximum # of aircrafts generated in the airspace
+MAX_AIRCRAFTS = 5
+
 # Initialize pygame
 pygame.init()
 
@@ -92,7 +95,7 @@ while running:
             running = False
 
     # Generate new aircraft if needed
-    if len(active_aircraft) < 3:
+    if len(active_aircraft) < MAX_AIRCRAFTS:
         available_flight_numbers = [fn for fn in flight_numbers if fn not in [aircraft.flight_number for aircraft in active_aircraft]]
         if available_flight_numbers:
             flight_number = random.choice(available_flight_numbers)
