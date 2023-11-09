@@ -20,6 +20,7 @@ class Login extends Component {
         // Add logic here...
         console.log('Username: ', this.state.username);
         console.log('Password: ', this.state.password);
+        alert('login successful');
     };
 
     render() {
