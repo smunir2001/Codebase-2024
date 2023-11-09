@@ -8,6 +8,7 @@ class Login extends Component {
             username: '',
             password: '',
             error: null,
+            showPassword: false, // State variable to control password show/hide
         };
 
     // Stored username & password
@@ -56,11 +57,19 @@ class Login extends Component {
                     <div className='form-container' id='form-password-container'>
                         <label>Password:</label>
                         <input
-                            type='password'
+                            type={this.state.showPassword ? 'text' : 'password'}
                             name='password'
                             value={this.state.password}
                             onChange={this.handleInputChange}
                         />
+                        <button 
+                            type='button'
+                            onClick={() =>
+                                this.setState({showPassword: !this.state.showPassword})
+                            }
+                        >
+                            {this.state.showPassword ? 'Hide' : 'Show'}
+                        </button>
                     </div>
                     <button type='submit' className='login-btn'>Login</button>
                 </form>
