@@ -62,7 +62,8 @@ class Login extends Component {
                             value={this.state.password}
                             onChange={this.handleInputChange}
                         />
-                        <button 
+                        <button
+                            className='pw-toggle-btn' 
                             type='button'
                             onClick={() =>
                                 this.setState({showPassword: !this.state.showPassword})
