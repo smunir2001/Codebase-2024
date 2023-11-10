@@ -41,7 +41,7 @@ navbar ul li a {
     color: #FFF;
     padding: 10px;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: all 0.3s ease;
 }
 
@@ -78,7 +78,7 @@ section {
     border: none;
     background: #3399FF;
     color: #FFF;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 12px;
     transition: all 0.3s ease;
 }
@@ -94,7 +94,7 @@ section {
     background: #404040;
     opacity: 0.8;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 25px;
     height: 250px;
     margin: auto;
     align-items: center;
@@ -113,6 +113,8 @@ section {
 
 .section-2 h2 {
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .section-2-flex {
@@ -129,9 +131,35 @@ section {
 
 .display-box {
     border: 3px solid #3399FF;
-    border-radius: 5px;
+    border-radius: 25px;
     width: 200px;
     height: 200px;
+}
+
+.section-3 {
+    margin: auto;
+    width: 100%;
+    background: #E6E6E6;
+    height: 375px;
+}
+
+.section-3-content {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+#section-3-content-p1 {
+    margin: 100px auto auto auto;
+    width: 600px;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+#section-3-content-p2 {
+    margin-left: 800px;
+    font-weight: bold;
 }
 
 footer {
