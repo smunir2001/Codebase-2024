@@ -5,4 +5,4 @@ Sami Munir | Rutgers University | smunir2001@gmail.com
 ### Flight Data Visualization - *Python, BeautifulSoup, matplotlib*
 ### AI Face Recognition - *C#, OpenCv4*
 ### My Login App - *ReactJS*
-### The Odin Project - *JavaScript*
+### The Odin Project - *HTML, CSS, JavaScript*
