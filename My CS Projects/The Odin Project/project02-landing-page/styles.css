@@ -11,6 +11,7 @@ header {
     background: #262626;
     color: #FFF;
     margin: 0;
+    height: 50vh;
 }
 
 navbar {
@@ -89,7 +90,8 @@ section {
 }
 
 .img-placeholder {
-    background: #BFBFBF;
+    /* background: #BFBFBF; */
+    background: #404040;
     opacity: 0.8;
     text-align: center;
     border-radius: 5px;
@@ -102,6 +104,34 @@ section {
 
 .img-placeholder p {
     font-weight: bold;
+}
+
+.section-2 {
+    width: 80%;
+    margin: auto auto 80px auto;
+}
+
+.section-2 h2 {
+    text-align: center;
+}
+
+.section-2-flex {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.section-2-flex-col p {
+    width: 200px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.display-box {
+    border: 3px solid #3399FF;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
 }
 
 footer {
