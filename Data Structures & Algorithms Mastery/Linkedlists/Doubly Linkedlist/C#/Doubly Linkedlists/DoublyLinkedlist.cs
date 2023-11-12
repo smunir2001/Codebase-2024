@@ -71,7 +71,25 @@ public class DoublyLinkedlist {
         PrintStats();
     }
 
-    public void RemoveFirst() {}
+    public void RemoveFirst() {
+        if (IsEmpty()) {
+            Console.WriteLine("\nremoveFirst() called...");
+            Console.WriteLine("\t--<ERROR>-- linkedlist is empty.");
+        } else {
+            Console.WriteLine("\nremoveFirst(" + head.GetData() + ") called...");
+            if (head.GetNext() == null) {
+                head = tail = null;
+                totalElements = 0;
+                headPointer = tailPointer = -1;
+            } else {
+                head.GetNext().SetPrev(null);
+                head = head.GetNext();
+                totalElements--;
+                tailPointer--;
+            }
+        }
+        PrintStats();
+    }
 
     public void InsertTail() {}
 

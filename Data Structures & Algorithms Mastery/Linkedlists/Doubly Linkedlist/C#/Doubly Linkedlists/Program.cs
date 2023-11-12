@@ -16,9 +16,17 @@ public class Program {
         DoublyLinkedlist dll_one = new DoublyLinkedlist();
         dll_one.ToString();
 
-        // testing function insertFirst()
+        // testing function InsertFirst()
         dll_one.InsertFirst(2);
         dll_one.InsertFirst(-11);
         dll_one.InsertFirst(65);
+
+        // testing function RemoveFirst()
+        dll_one.RemoveFirst();
+        dll_one.RemoveFirst();
+        dll_one.RemoveFirst();
+        dll_one.RemoveFirst(); // ERROR expected --> null linkedlist removal
+
+        //
     }
 }
