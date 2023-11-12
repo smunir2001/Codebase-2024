@@ -31,5 +31,11 @@ public class Program {
         dll_one.InsertLast(2);
         dll_one.InsertLast(-11);
         dll_one.InsertLast(65);
+
+        // testing function RemoveLast()
+        dll_one.RemoveLast();
+        dll_one.RemoveLast();
+        dll_one.RemoveLast();
+        dll_one.RemoveLast(); // ERROR expected --> null linkedlist removal
     }
 }

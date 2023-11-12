@@ -132,7 +132,34 @@ public class DoublyLinkedlist {
         PrintStats();
     }
 
-    public void RemoveTail() {}
+    public void RemoveLast() {
+        if (IsEmpty()) {
+            Console.WriteLine("\nremoveLast() called...");
+            Console.WriteLine("\n\t--<ERROR> linked list is empty.");
+        } else {
+            Console.WriteLine("\nremoveLast(" + tail.GetData() + ") called...");
+            if (head.GetNext() == null) {
+                head = tail = null;
+                totalElements = 0;
+                headPointer = tailPointer = -1;
+            } else {
+                Node tempHead = head;
+                Node currentNode = tempHead;
+                while (currentNode != null) {
+                    if (currentNode.GetNext().GetNext() == null) {
+                        break;
+                    }
+                    currentNode = currentNode.GetNext();
+                }
+                tail = tail.GetPrev();
+                currentNode.SetNext(null);
+                head = tempHead;
+                totalElements--;
+                tailPointer--;
+            }
+        }
+        PrintStats();
+    }
 
     override public string ToString() {
         PrintDS();
