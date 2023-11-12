@@ -6,6 +6,7 @@
     Data Structures & Algorithms Mastery
     - Doubly linkedlists
 */
+namespace Doubly_Linkedlists;
 
 public class Program {
     public static void Main(string[] args) {
