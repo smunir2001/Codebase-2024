@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 struct Node {
     int data;
@@ -52,7 +53,7 @@ void printStats() {
 
 void insertFirst(int data) {
     printf("\ninsertFirst(%d) called...", data);
-    if (isEmpty() == 1) {
+    if (isEmpty()) {
         head = (struct Node*) malloc(sizeof(struct Node));
         head -> data = data;
         head -> next = NULL;
@@ -97,6 +98,47 @@ void removeFirst() {
     printStats();
 }
 
+void insertLast(int data) {
+    printf("\ninsertLast(%d) called...", data);
+    if (isEmpty()) {
+        head = tail = (struct Node*) malloc(sizeof(struct Node));
+        head -> data = data;
+        head -> next = head -> prev = NULL;
+        totalElements = 1;
+        headPointer = tailPointer = 0;
+    } else {
+        if (head -> next == NULL) {
+            struct Node *tempHead = head;
+            struct Node *currentHead = tempHead;
+            struct Node *newNode = (struct Node*) malloc(sizeof(struct Node));
+            newNode -> data = data;
+            newNode -> next = NULL;
+            newNode -> prev = tail;
+            tempHead -> next = newNode;
+            head = tempHead;
+            totalElements++;
+            tailPointer++;
+        } else {
+            struct Node *tempHead = head;
+            struct Node *currentNode = tempHead;
+            while (currentNode != NULL) {
+                if (currentNode -> next == NULL) {
+                    break;
+                }
+                currentNode = currentNode -> next;
+            }
+            struct Node *newNode = (struct Node*) malloc(sizeof(struct Node));
+            newNode -> data = data;
+            newNode -> prev = currentNode;
+            newNode -> next = NULL;
+            currentNode -> next = newNode;
+            totalElements++;
+            tailPointer++;
+        }
+    }
+    printStats();
+}
+
 int main(int argc, char* argv[]) {
     printf("Doubly Linkedlists in C\n");
     printf("-----------------------\n");
@@ -115,5 +157,12 @@ int main(int argc, char* argv[]) {
     removeFirst();
     removeFirst();
     removeFirst(); // ERROR expected --> NULL linkedlist removal
+
+    // testing function insertLast()
+    insertLast(2);
+    insertLast(-11);
+    insertLast(65);
+    insertLast(7);
+
     return EXIT_SUCCESS;
 }
