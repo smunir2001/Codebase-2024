@@ -91,7 +91,46 @@ public class DoublyLinkedlist {
         PrintStats();
     }
 
-    public void InsertTail() {}
+    public void InsertLast(int data) {
+        Console.WriteLine("\ninsertLast(" + data + ") called...");
+        if (IsEmpty()) {
+            head = tail = new Node();
+            head.SetData(data);
+            head.SetNext(null);
+            head.SetPrev(null);
+            totalElements = 1;
+            headPointer = tailPointer = 0;
+        } else {
+            if (head.GetNext() == null) {
+                Node newNode = new Node();
+                newNode.SetData(data);
+                newNode.SetNext(null);
+                newNode.SetPrev(head);
+                tail = newNode;
+                head.SetNext(newNode);
+                totalElements++;
+                tailPointer++;
+            } else {
+                Node tempHead = head;
+                Node currentNode = tempHead;
+                while (currentNode != null) {
+                    if (currentNode.GetNext() == null) {
+                        break;
+                    }
+                    currentNode = currentNode.GetNext();
+                }
+                Node newNode = new Node();
+                newNode.SetData(data);
+                newNode.SetPrev(currentNode);
+                newNode.SetNext(null);
+                currentNode.SetNext(newNode);
+                tail = currentNode.GetNext();
+                totalElements++;
+                tailPointer++;
+            }
+        }
+        PrintStats();
+    }
 
     public void RemoveTail() {}
 

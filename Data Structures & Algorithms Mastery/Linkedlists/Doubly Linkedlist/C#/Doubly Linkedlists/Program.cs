@@ -27,6 +27,9 @@ public class Program {
         dll_one.RemoveFirst();
         dll_one.RemoveFirst(); // ERROR expected --> null linkedlist removal
 
-        //
+        // testing function InsertLast()
+        dll_one.InsertLast(2);
+        dll_one.InsertLast(-11);
+        dll_one.InsertLast(65);
     }
 }
