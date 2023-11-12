@@ -7,9 +7,7 @@ public class DoublyLinkedlist {
     private int headPointer = -1;
     private int tailPointer = -1;
 
-    public DoublyLinkedlist() {}
-
-    private Boolean isEmpty() {
+    private Boolean IsEmpty() {
         if (head == null || tail == null) {
             return true;
         } else {
@@ -17,39 +15,70 @@ public class DoublyLinkedlist {
         }
     }
 
-    private void printDS() {
-        if (isEmpty()) {
-            Console.Write("\tHEAD <-> NULL");
+    private void PrintDS() {
+        if (IsEmpty()) {
+            Console.Write("\t\tHEAD <-> NULL\n");
         } else {
-            Console.Write("\tHEAD <-> ");
+            Console.Write("\t\tHEAD <-> ");
             Node currentNode = this.head;
             while (currentNode != null) {
-                Console.Write(currentNode.getData() + " <-> ");
-                currentNode = currentNode.getNext();
+                Console.Write(currentNode.GetData() + " <-> ");
+                currentNode = currentNode.GetNext();
             }
-            Console.Write("NULL");
+            Console.Write("NULL\n");
         }
     }
 
-    private void printStats() {
-        if (isEmpty()) {
-            Console.WriteLine("HEAD.getData(): N/A");
-            Console.WriteLine("TAIL.getData(): N/A");
+    private void PrintStats() {
+        if (IsEmpty()) {
+            Console.WriteLine("\tHEAD.getData(): N/A");
+            Console.WriteLine("\tTAIL.getData(): N/A");
         } else {
-            Console.WriteLine("HEAD.getData(): " + head.getData());
-            Console.WriteLine("TAIL.getData(): " + tail.getData());
+            Console.WriteLine("\tHEAD.getData(): " + head.GetData());
+            Console.WriteLine("\tTAIL.getData(): " + tail.GetData());
         }
-        Console.WriteLine("total elements: " + totalElements);
-        Console.WriteLine("HEAD pointer: " + headPointer);
-        Console.WriteLine("TAIL pointer: " + tailPointer);
-        printDS();
+        Console.WriteLine("\ttotal elements: " + totalElements);
+        Console.WriteLine("\tHEAD pointer: " + headPointer);
+        Console.WriteLine("\tTAIL pointer: " + tailPointer);
+        PrintDS();
     }
 
-    public void insertFirst(int data) {}
+    public void InsertFirst(int data) {
+        Console.WriteLine("\ninsertFirst(" + data + ") called...");
+        if (IsEmpty()) {
+            head = new Node();
+            head.SetData(data);
+            head.SetNext(null);
+            head.SetPrev(null);
+            tail = head;
+            totalElements++;
+            headPointer++;
+            tailPointer++;
+        } else {
+            Node tempHead = head;
+            Node newNode = new Node();
+            newNode.SetData(data);
+            tempHead.SetPrev(newNode);
+            if (tempHead.GetNext() == null) {
+                tail = tempHead;
+            }
+            newNode.SetNext(tempHead);
+            newNode.SetPrev(null);
+            head = newNode;
+            totalElements++;
+            tailPointer++;
+        }
+        PrintStats();
+    }
 
-    public void removeFirst() {}
+    public void RemoveFirst() {}
 
-    public void insertTail() {}
+    public void InsertTail() {}
 
-    public void removeTail() {}
+    public void RemoveTail() {}
+
+    override public string ToString() {
+        PrintDS();
+        return "";
+    }
 }

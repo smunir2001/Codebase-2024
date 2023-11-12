@@ -7,6 +7,8 @@ Sami Munir | Rutgers University | smunir2001@gmail.com
 ### Linkedlists
 * Singly Linkedlists
 * Doubly linkedlists
+    * C
+    * C#
 ### Stacks
 * Array stacks
 * Linkedlist stacks

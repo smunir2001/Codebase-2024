@@ -4,7 +4,7 @@
     November 11, 2023
     Rutgers University
     Data Structures & Algorithms Mastery
-    - Doubly linkedlists
+    - Doubly linkedlists: C#
 */
 namespace Doubly_Linkedlists;
 
@@ -12,5 +12,13 @@ public class Program {
     public static void Main(string[] args) {
         Console.WriteLine("Doubly Linkedlists - C#");
         Console.WriteLine("-----------------------\n");
+
+        DoublyLinkedlist dll_one = new DoublyLinkedlist();
+        dll_one.ToString();
+
+        // testing function insertFirst()
+        dll_one.InsertFirst(2);
+        dll_one.InsertFirst(-11);
+        dll_one.InsertFirst(65);
     }
 }
