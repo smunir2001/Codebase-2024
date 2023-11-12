@@ -19,3 +19,8 @@ def fetch_live_flight_data(API_KEY):
     except requests.exceptions.RequestException as e:
         print(f'Error fethcing data: {e}')
         return None
+
+def create_airline_bar_chart(data):
+    if not data:
+        return
+    airlines = {}
