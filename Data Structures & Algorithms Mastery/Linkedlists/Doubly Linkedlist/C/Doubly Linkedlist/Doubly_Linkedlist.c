@@ -75,16 +75,45 @@ void insertFirst(int data) {
     printStats();
 }
 
-void removeFirst() {}
+void removeFirst() {
+    if (isEmpty()) {
+        printf("\nremoveFirst() called...");
+        printf("\n\t--<ERROR>-- linkedlist is empty.");
+    } else {
+        printf("\nremoveFirst(%d) called...", head -> data);
+        if (head -> next == NULL) {
+            head = tail = NULL;
+            totalElements = 0;
+            headPointer = tailPointer = -1;
+            free(head);
+            free(tail);
+        } else {
+            head -> next -> prev = NULL;
+            head = head -> next;
+            totalElements--;
+            tailPointer--;
+        }
+    }
+    printStats();
+}
 
 int main(int argc, char* argv[]) {
     printf("Doubly Linkedlists in C\n");
     printf("-----------------------\n");
 
     printStats();
+
+    // testing function insertFirst()
     insertFirst(2);
     insertFirst(-11);
     insertFirst(65);
     insertFirst(7);
+
+    // testing function removeFirst()
+    removeFirst();
+    removeFirst();
+    removeFirst();
+    removeFirst();
+    removeFirst(); // ERROR expected --> NULL linkedlist removal
     return EXIT_SUCCESS;
 }
