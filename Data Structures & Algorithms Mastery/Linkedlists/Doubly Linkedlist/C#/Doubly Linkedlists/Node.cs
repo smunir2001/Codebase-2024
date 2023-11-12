@@ -5,13 +5,6 @@ public class Node {
     private Node next;
     private Node prev;
 
-    public Node() {}
-
-    public Node(int data) {
-        this.data = data;
-        this.next = this.prev = null;
-    }
-
     public Node(int data, Node next, Node prev) {
         this.data = data;
         this.next = next;
