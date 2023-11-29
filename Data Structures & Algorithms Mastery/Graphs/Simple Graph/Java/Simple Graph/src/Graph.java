@@ -1,21 +1,40 @@
+import java.util.LinkedList;
+
 public class Graph {
-    private Vertex[] graph;
+    private LinkedList<Vertex> graph;
     private int numVertices;
     private int numEdges;
 
     public Graph() {}
 
-    public Graph(Vertex[] vertices) {
-        this.graph = vertices;
-        this.numVertices = vertices.length;
+    private boolean isEmpty() {
+        if (graph == null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public void addVertex(Vertex newVertex) {
+        System.out.println("\naddVertex(" + newVertex.getData() + ") called...");
+        if (isEmpty()) {
+            graph = new LinkedList<Vertex>();
+            graph.add(newVertex);
+        } else {
+            graph.add(newVertex);
+        }
+        numVertices++;
+        printVertices();
     }
 
     public void printVertices() {
         System.out.println("\nprintVertices() called...");
-        System.out.println("data | key | neighbors");
-        System.out.println("----------------------");
-        for (int i = 0; i < graph.length; i++) {
-            System.out.println((i + 1) + ". " + graph[i].toString());
+        if (isEmpty()) {
+            System.out.println("--<EMPTY GRAPH>--");
+        } else {
+            for (int i = 0; i < this.graph.size(); i++) {
+                System.out.println("Vertex " + (i + 1) + ". -->\n" + graph.get(i).toString());
+            }
         }
     }
 }
