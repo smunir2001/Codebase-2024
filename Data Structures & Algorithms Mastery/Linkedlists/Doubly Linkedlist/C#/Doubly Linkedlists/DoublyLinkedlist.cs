@@ -135,7 +135,7 @@ public class DoublyLinkedlist {
     public void RemoveLast() {
         if (IsEmpty()) {
             Console.WriteLine("\nremoveLast() called...");
-            Console.WriteLine("\n\t--<ERROR> linked list is empty.");
+            Console.WriteLine("\n\t--<ERROR>-- linked list is empty.");
         } else {
             Console.WriteLine("\nremoveLast(" + tail.GetData() + ") called...");
             if (head.GetNext() == null) {
