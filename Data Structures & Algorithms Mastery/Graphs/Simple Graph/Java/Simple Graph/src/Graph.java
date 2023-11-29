@@ -1,4 +1,6 @@
 import java.util.LinkedList;
+import java.util.Queue;
+import java.util.HashMap;
 
 public class Graph {
     private LinkedList<Vertex> graph;
@@ -57,8 +59,8 @@ public class Graph {
             System.out.println("\naddEdge(" + src.getData() + " <-> " + dest.getData() + ") called...");
             edges.add(new Edge(src, dest, weight));
             edges.add(new Edge(dest, src, weight));
-            this.graph.get(src.getKey()).addNeighbor(new Edge(src, dest, weight));
-            this.graph.get(dest.getKey()).addNeighbor(new Edge(dest, src, weight));
+            graph.get(src.getKey()).addNeighbor(new Edge(src, dest, weight));
+            graph.get(dest.getKey()).addNeighbor(new Edge(dest, src, weight));
             numEdges++;
         } else if (!isEmpty()) {
             System.out.println("\naddEdge() called...\n--<ERROR>-- vertices DNE, cannot add edge.");
@@ -68,7 +70,7 @@ public class Graph {
         printGraphDS();
     }
 
-    public void printGraphDS() {
+    private void printGraphDS() {
         if (isEmpty()) {
             System.out.println("--<EMPTY GRAPH>--");
         } else {
@@ -77,5 +79,35 @@ public class Graph {
             }
         }
         System.out.println("\tnumVertices: " + numVertices + "\n\tnumEdges: " + numEdges);
+    }
+
+    public void breadthFirstTraversal() {
+        System.out.println("\nbreadthFirstTraversal() called...");
+        HashMap<Vertex, Boolean> visited = new HashMap<Vertex, Boolean>();
+        LinkedList<Vertex> queue = new LinkedList<Vertex>();
+        visited.put(graph.get(0), true);
+        queue.push(graph.get(0));
+        while (!queue.isEmpty()) {
+            Vertex poppedVertex = queue.pop();
+            System.out.println(poppedVertex.getData());
+            if (poppedVertex.getNeighbors() != null) {
+                for (int i = 0; i < poppedVertex.getNeighbors().size(); i++) {
+                    if (!visited.containsKey(poppedVertex.getNeighbors().get(i).getDest())) {
+                        visited.put(poppedVertex.getNeighbors().get(i).getDest(),true);
+                        queue.push(poppedVertex.getNeighbors().get(i).getDest());
+                    }
+                }
+            }
+        }
+    }
+
+    public void depthFirstTraversal() {
+        System.out.println();
+    }
+
+    public String toString() {
+        System.out.println("\nGraph.toString() called...");
+        printGraphDS();
+        return "";
     }
 }

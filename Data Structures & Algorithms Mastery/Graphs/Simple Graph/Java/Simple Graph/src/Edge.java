@@ -1,7 +1,7 @@
 public class Edge {
-    Vertex src;
-    Vertex dest;
-    float weight;
+    private Vertex src;
+    private Vertex dest;
+    private float weight;
 
     public Edge() {}
 
