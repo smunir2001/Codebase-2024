@@ -36,12 +36,17 @@ public class Graph {
     }
 
     public void removeVertex(Vertex vertexToRemove) {
-        //
-        System.out.println();
+        if (containsVertex(vertexToRemove)) {
+            System.out.println("\nremoveVertex(" + vertexToRemove.getData() + ") called...");
+            graph.remove(vertexToRemove);
+        } else {
+            System.out.println("\nremoveVertex() called...\n--<ERROR>-- vertex does not exist.");
+        }
+        printVertices();
     }
 
     public void printVertices() {
-        System.out.println("\nprintVertices() called...");
+        // System.out.println("\nprintVertices() called...");
         if (isEmpty()) {
             System.out.println("--<EMPTY GRAPH>--");
         } else {
