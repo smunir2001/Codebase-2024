@@ -1,9 +1,10 @@
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Vertex {
     private String data;
     private int key;
-    private LinkedList<Vertex> neighbors;
+    private LinkedList<Vertex> neighbors = new LinkedList<Vertex>();
 
     public Vertex() {}
 
@@ -34,5 +35,10 @@ public class Vertex {
 
     public LinkedList<Vertex> getNeighbors() {
         return this.neighbors;
+    }
+
+    @Override
+    public String toString() {
+        return this.data + " | " + this.key + " | " + Arrays.toString(this.neighbors.toArray());
     }
 }
