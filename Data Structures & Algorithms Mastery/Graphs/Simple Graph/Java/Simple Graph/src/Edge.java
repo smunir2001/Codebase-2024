@@ -1,7 +1,7 @@
 public class Edge {
     Vertex src;
     Vertex dest;
-    int weight;
+    float weight;
 
     public Edge() {}
 
@@ -11,7 +11,7 @@ public class Edge {
         this.weight = 1;
     }
 
-    public Edge(Vertex src, Vertex dest, int weight) {
+    public Edge(Vertex src, Vertex dest, float weight) {
         this.src = src;
         this.dest = dest;
         this.weight = weight;
@@ -33,11 +33,16 @@ public class Edge {
         return this.dest;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(float weight) {
         this.weight = weight;
     }
 
-    public int getWeight() {
+    public float getWeight() {
         return this.weight;
+    }
+
+    @Override
+    public String toString() {
+        return "{ src: " + src.getData() + " dest: " + dest.getData() + " weight: " + weight + " }";
     }
 }

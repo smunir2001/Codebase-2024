@@ -4,13 +4,9 @@ import java.util.LinkedList;
 public class Vertex {
     private String data;
     private int key;
-    private LinkedList<Vertex> neighbors = new LinkedList<Vertex>();
+    private LinkedList<Edge> neighbors = new LinkedList<Edge>();
 
     public Vertex() {}
-
-    public Vertex(String data) {
-        this.data = data;
-    }
 
     public Vertex(String data, int key) {
         this.data = data;
@@ -25,20 +21,20 @@ public class Vertex {
         return this.data;
     }
 
-    public void setKey(int key) {
-        this.key = key;
-    }
-
     public int getKey() {
         return this.key;
     }
 
-    public LinkedList<Vertex> getNeighbors() {
+    public void addNeighbor(Edge edge) {
+        this.neighbors.add(edge); 
+    }
+
+    public LinkedList<Edge> getNeighbors() {
         return this.neighbors;
     }
 
     @Override
     public String toString() {
-        return "\tData: {" + this.data + "} | Key: {" + this.key + "}\n\tNeighbors: " + Arrays.toString(this.neighbors.toArray());
+        return "\t\t{ Data: " + this.data + " Key: " + this.key + " }\n\t\t{ Neighbors: " + Arrays.toString(this.neighbors.toArray()) + " }";
     }
 }
