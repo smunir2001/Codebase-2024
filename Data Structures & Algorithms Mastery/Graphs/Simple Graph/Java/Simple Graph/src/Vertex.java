@@ -1,6 +1,9 @@
+import java.util.LinkedList;
+
 public class Vertex {
     private String data;
     private int key;
+    private LinkedList<Vertex> neighbors;
 
     public Vertex() {}
 
@@ -27,5 +30,9 @@ public class Vertex {
 
     public int getKey() {
         return this.key;
+    }
+
+    public LinkedList<Vertex> getNeighbors() {
+        return this.neighbors;
     }
 }
