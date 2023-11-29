@@ -39,6 +39,6 @@ public class Vertex {
 
     @Override
     public String toString() {
-        return "\t" + this.data + " | " + this.key + "\n\tNeighbors: " + Arrays.toString(this.neighbors.toArray());
+        return "\tData: {" + this.data + "} | Key: {" + this.key + "}\n\tNeighbors: " + Arrays.toString(this.neighbors.toArray());
     }
 }

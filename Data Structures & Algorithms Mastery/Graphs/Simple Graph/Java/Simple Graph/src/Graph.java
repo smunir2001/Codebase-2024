@@ -14,6 +14,14 @@ public class Graph {
             return false;
         }
     }
+
+    private boolean containsVertex(Vertex targetVertex) {
+        if (graph.contains(targetVertex)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
     
     public void addVertex(Vertex newVertex) {
         System.out.println("\naddVertex(" + newVertex.getData() + ") called...");
@@ -25,6 +33,11 @@ public class Graph {
         }
         numVertices++;
         printVertices();
+    }
+
+    public void removeVertex(Vertex vertexToRemove) {
+        //
+        System.out.println();
     }
 
     public void printVertices() {
