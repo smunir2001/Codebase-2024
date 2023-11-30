@@ -1,6 +1,5 @@
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Stack;
 
 public class Graph {
     private LinkedList<Vertex> graph;
@@ -86,16 +85,15 @@ public class Graph {
         HashMap<Vertex, Boolean> visited = new HashMap<Vertex, Boolean>();
         LinkedList<Vertex> queue = new LinkedList<Vertex>();
         visited.put(graph.get(0), true);
-        queue.push(graph.get(0));
+        queue.add(graph.get(0));
         while (!queue.isEmpty()) {
-            Vertex poppedVertex = queue.pop();
-            System.out.println(poppedVertex.getData());
-            if (poppedVertex.getNeighbors() != null) {
-                for (int i = 0; i < poppedVertex.getNeighbors().size(); i++) {
-                    if (!visited.containsKey(poppedVertex.getNeighbors().get(i).getDest())) {
-                        visited.put(poppedVertex.getNeighbors().get(i).getDest(),true);
-                        queue.push(poppedVertex.getNeighbors().get(i).getDest());
-                    }
+            Vertex frontVertex = queue.peek();
+            System.out.println(frontVertex.getData());
+            queue.remove();
+            for (int i = 0; i < frontVertex.getNeighbors().size(); i++) {
+                if (!visited.containsKey(frontVertex.getNeighbors().get(i).getDest())) {
+                    visited.put(frontVertex.getNeighbors().get(i).getDest(), true);
+                    queue.add(frontVertex.getNeighbors().get(i).getDest());
                 }
             }
         }
