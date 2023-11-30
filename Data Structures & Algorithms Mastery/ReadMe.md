@@ -6,7 +6,7 @@ Sami Munir | Rutgers University | smunir2001@gmail.com
 * Dynamic arrays
 ### Linkedlists
 * Singly Linkedlists
-* Doubly linkedlists
+* Doubly Linkedlists
     * C
     * C#
 ### Stacks
@@ -17,5 +17,9 @@ Sami Munir | Rutgers University | smunir2001@gmail.com
 * Linkedlist queues
 ### Trees
 ### Graphs
+* Simple graphs
+    * Java
+* Undirected graphs
+* Weighted graphs
 ### Searching Algorithms
 ### Sorting Algorithms
