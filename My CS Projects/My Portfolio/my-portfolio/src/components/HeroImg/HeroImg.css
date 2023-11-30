@@ -1,11 +1,77 @@
 .heroImg-con {
     width: 100vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* height: 380px; */
     background-image: url('../../assets//hero-img-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.heroImg-con-welcome-div, .heroImg-con-col2 {
+    width: 33.5%;
+    margin: 60px auto;
+}
+
+.heroImg-con-welcome-div-title-con h1 {
+    font-size: 36px;
+    font-weight: 700;
+    /* border: 1px solid #FFF; */
+    border-bottom: 2px solid #0099ff;
+    width: 150px;
+    text-align: center;
+    padding: 5px 10px;
+    /* background: rgb(38,38,38); */
+    /* background: linear-gradient(90deg, rgba(38,38,38,1) 25%, rgba(0,153,255,1) 65%); */
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.heroImg-con-welcome-div-title-con h1:hover {
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    transform: scale(1.1);
+}
+
+.heroImg-con-welcome-div-mssg-con h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.heroImg-con-welcome-div-mssg-con p {
+    font-size: 24px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.heroImg-con-welcome-div-mssg-con h2 span {
+    color: #0099ff;
+    font-weight: 600;
+}
+
+.heroImg-con-welcome-div-cwm-con button {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-weight: 500;
+    /* background: #262626; */
+    background: transparent;
+    border: 2px solid #0099ff;
+    color: #0099ff;
+    transition: all 0.3s ease-in-out;
+}
+
+.heroImg-con-welcome-div-cwm-con button:hover {
+    /* background: #262626; */
+    background: transparent;
+    color: #0099ff;
+    /* border: 2px solid #262626; */
+    border: 2px solid transparent;
+    /* transform: scale(1.1); */
 }
 
 .heroImg-con-welcome-div-cwm-con button div {
@@ -23,4 +89,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: 10px 10px 5px #0d0d0d;
+    /* transition: all 0.3s ease-in-out; */
+    /* border: 2px solid transparent; */
+}
+
+.heroImg-con-col2 p {
+    font-size: 36px;
+    /* text-align: center; */
+    transition: all 0.3s ease-in-out;
+    cursor: none;
+    font-weight: 700;
+}
+
+.heroImg-con-col2 p:hover {
+    color: #0099ff;
+    transform: scale(1.1);
+    text-shadow: 5px 5px 2.5px #0099ff;
+}
+
+#heroImg-con-col2-p1 {
+    margin-left: 40px;
+}
+
+#heroImg-con-col2-p2 {
+    margin-left: 80px;
+}
+
+#heroImg-con-col2-p3 {
+    margin-left: 160px;
+}
+
+#heroImg-con-col2-p4 {
+    margin-left: 200px;
 }

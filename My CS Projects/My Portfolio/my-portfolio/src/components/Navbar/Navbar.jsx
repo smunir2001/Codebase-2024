@@ -10,7 +10,6 @@ const Navbar = () => {
   return (
     <div className='navbar-con'>
         <div className='navbar-logo-con'>
-            {/* <h1>Munir Code Crafters</h1> */}
             <h1>Munir Code Forge</h1>
         </div>
         <div className='navbar-links-con'>

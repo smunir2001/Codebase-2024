@@ -11,7 +11,7 @@ const HeroImg = () => {
                 <h1>Hi, I'm Sami!</h1>
             </div>
             <div className='heroImg-con-welcome-div-mssg-con'>
-                <h2>A Software Engineering</h2>
+                <h2>A <span>Software</span> Engineer & <span>Full Stack</span> Developer</h2>
                 <p>
                     As a Software Engineer and Web Developer, I have a
                     passion for working on full-stack applications and
@@ -26,10 +26,10 @@ const HeroImg = () => {
             </div>
         </div>
         <div className='heroImg-con-col2'>
-            <p>Design.</p>
-            <p>Innovate.</p>
-            <p>Develop.</p>
-            <p>Forge Code.</p>
+            <p id='heroImg-con-col2-p1'>Design.</p>
+            <p id='heroImg-con-col2-p2'>Innovate.</p>
+            <p id='heroImg-con-col2-p3'>Develop.</p>
+            <p id='heroImg-con-col2-p4'>Forge Code.</p>
         </div>
     </div>
   );
