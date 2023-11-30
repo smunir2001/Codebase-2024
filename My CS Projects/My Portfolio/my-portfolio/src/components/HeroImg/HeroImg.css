@@ -1,0 +1,26 @@
+.heroImg-con {
+    width: 100vw;
+    border: 1px solid red;
+    /* height: 380px; */
+    background-image: url('../../assets//hero-img-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -500px;
+}
+
+.heroImg-con-welcome-div-cwm-con button div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImg-con-welcome-div-cwm-con button div span {
+    margin: 0 5px;
+}
+
+.heroImg-con-col2 {
+    background-image: url('../../assets/hero-img-bg2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
