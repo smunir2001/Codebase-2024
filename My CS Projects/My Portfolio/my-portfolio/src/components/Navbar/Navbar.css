@@ -1,0 +1,39 @@
+.navbar-con {
+    border: 1px solid red;
+    width: 100vw;
+}
+
+.navbar-con ul {
+    list-style: none;
+}
+
+.navbar-con ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.navbar-logo-con {
+    border: 1px solid green;
+}
+
+.navbar-links-con {
+    border: 1px solid yellow;
+}
+
+.navbar-links-con ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-socials-links-con {
+    border: 1px solid blue;
+}
+
+.navbar-socials-links-con ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-connectwm-button-con {
+    border: 1px solid pink;
+}
