@@ -50,5 +50,6 @@ public class App {
         graphV2.addEdge(v4, v6, 1);
         graphV2.addEdge(v5, v6, 1);
         graphV2.breadthFirstTraversal();
+        graphV2.depthFirstTraversal();
     }
 }

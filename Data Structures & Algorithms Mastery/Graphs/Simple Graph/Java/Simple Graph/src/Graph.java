@@ -1,6 +1,6 @@
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Stack;
 
 public class Graph {
     private LinkedList<Vertex> graph;
@@ -101,8 +101,23 @@ public class Graph {
         }
     }
 
+    private void depthFirstTraversalUtil(Vertex src, HashMap<Vertex, Boolean> visited) {
+        visited.put(src, true);
+        System.out.println(src.getData());
+        if (src.getNeighbors() != null) {
+            for (int i = 0; i < src.getNeighbors().size(); i++) {
+                if (!visited.containsKey(src.getNeighbors().get(i).getDest())) {
+                    depthFirstTraversalUtil(src.getNeighbors().get(i).getDest(), visited);
+                }
+            }
+        }
+    }
+
     public void depthFirstTraversal() {
-        System.out.println();
+        System.out.println("\ndepthFirstTraversal() called...");
+        Vertex src = graph.get(0);
+        HashMap<Vertex, Boolean> visited = new HashMap<Vertex, Boolean>();
+        depthFirstTraversalUtil(src, visited);
     }
 
     public String toString() {
