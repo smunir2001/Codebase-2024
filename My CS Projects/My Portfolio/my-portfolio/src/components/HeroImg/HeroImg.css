@@ -85,7 +85,7 @@
 }
 
 .heroImg-con-col2 {
-    background-image: url('../../assets/hero-img-bg2.webp');
+    /* background-image: url('../../assets/hero-img-bg2.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
