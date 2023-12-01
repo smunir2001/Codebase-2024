@@ -3,7 +3,9 @@
 public class Vertex {
     private string data;
 
-    public Vertex() {}
+    public Vertex() {
+        this.data = "N/A";
+    }
 
     public Vertex(string data) {
         this.data = data;
