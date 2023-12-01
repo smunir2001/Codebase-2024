@@ -12,5 +12,14 @@ public class Program {
 
         Graph njtGraph = new Graph();
         njtGraph.ToString();
+
+        njtGraph.AddVertex("Trenton Transit Center");
+        njtGraph.AddVertex("Hamilton");
+        njtGraph.AddVertex("Princeton Junction");
+        njtGraph.AddVertex("Jersey Ave");
+        njtGraph.AddVertex("New Brunswick");
+        njtGraph.AddVertex("Edison");
+        njtGraph.AddVertex("Metuchen");
+        njtGraph.AddVertex("Metropark");
     }
 }
