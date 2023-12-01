@@ -154,6 +154,9 @@ public class Graph {
         }
     }
 
+    /*
+        Helper function DepthFirstTraversalUtil(Vertex src, Hashtable visited)
+    */
     private void DepthFirstTraversalUtil(Vertex src, Hashtable visited) {
         visited.Add(src, 1);
         Console.WriteLine(src.GetData());
