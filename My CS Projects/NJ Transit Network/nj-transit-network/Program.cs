@@ -9,5 +9,8 @@ public class Program {
     public static void Main(string[] args) {
         Console.WriteLine("NJ Transit Network");
         Console.WriteLine("------------------");
+
+        Graph njtGraph = new Graph();
+        njtGraph.ToString();
     }
 }

@@ -42,6 +42,6 @@ public class Edge {
     }
 
     override public string ToString() {
-        return this.src + " -(" + this.weight + ")> " + this.dest;
+        return this.src + " --[" + this.weight + "]--> " + this.dest;
     }
 }
