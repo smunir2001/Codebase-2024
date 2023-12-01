@@ -28,6 +28,8 @@ public class Program {
         njtGraph.AddVertex("Perth Amboy");
 
         njtGraph.AddVertex("Newark Penn Station");
+        njtGraph.AddVertex("New York Penn Station");
+        njtGraph.AddVertex("Hoboken");
 
         njtGraph.AddEdge("Trenton Transit Center", "Hamilton", 5.1);
         njtGraph.AddEdge("Hamilton", "Princeton Junction", 5.4);
@@ -44,8 +46,12 @@ public class Program {
         njtGraph.AddEdge("Avenel", "Woodbridge", 3.1);
         njtGraph.AddEdge("Woodbridge", "Perth Amboy", 3.3);
 
+        njtGraph.AddEdge("Newark Penn Station", "New York Penn Station", 15.1);
+        njtGraph.AddEdge("Newark Penn Station", "Hoboken", 12.0);
+
         // njtGraph.PrintGraph();
 
         njtGraph.BreadthFirstTraversal();
+        njtGraph.DepthFirstTraversal();
     }
 }

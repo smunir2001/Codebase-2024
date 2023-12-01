@@ -154,6 +154,25 @@ public class Graph {
         }
     }
 
+    private void DepthFirstTraversalUtil(Vertex src, Hashtable visited) {
+        visited.Add(src, 1);
+        Console.WriteLine(src.GetData());
+        if (src.GetNeighbors().Count != 0) {
+            for (int i = 0; i < src.GetNeighbors().Count; i++) {
+                if (!visited.ContainsKey(src.GetNeighbors()[i].GetDest())) {
+                    DepthFirstTraversalUtil(src.GetNeighbors()[i].GetDest(), visited);
+                }
+            }
+        }
+    }
+
+    public void DepthFirstTraversal() {
+        Console.WriteLine("\nDepthFirstTraversal() called...");
+        Vertex src = this.vertices[0];
+        Hashtable visited = new Hashtable();
+        DepthFirstTraversalUtil(src, visited);
+    }
+
     override public string ToString() {
         Console.WriteLine("NJ Transit Network -->");
         if (IsEmpty()) {
