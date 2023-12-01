@@ -21,5 +21,9 @@ public class Program {
         njtGraph.AddVertex("Edison");
         njtGraph.AddVertex("Metuchen");
         njtGraph.AddVertex("Metropark");
+
+        njtGraph.AddEdge("Trenton Transit Center", "Hamilton", 5.1);
+        njtGraph.AddEdge("Hamilton", "Princeton Junction", 5.4);
+        njtGraph.AddEdge("Princeton Junction", "Jersey Ave", 9.7);
     }
 }

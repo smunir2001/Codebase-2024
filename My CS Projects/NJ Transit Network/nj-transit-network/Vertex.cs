@@ -14,15 +14,22 @@ public class Vertex {
         this.neighbors = new List<Edge>();
     }
 
+    /*
+        Helper function HasNeighbors()
+    */
+    private Boolean HasNeighbors() {
+        if (this.neighbors.Count == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     public void SetData(string data) {
         this.data = data;
     }
 
     public string GetData() {
-        return this.data;
-    }
-
-    override public string ToString() {
         return this.data;
     }
 
@@ -32,5 +39,20 @@ public class Vertex {
 
     public void RemoveNeighbor(Edge neighbor) {
         this.neighbors.Remove(neighbor);
+    }
+
+    override public string ToString() {
+        Console.WriteLine(this.data + " -->");
+        string neighborsStr = "";
+        for (int i = 0; i < this.neighbors.Count; i++) {
+            neighborsStr += this.neighbors[i].GetDest().GetData() + ", ";
+        }
+        if (this.HasNeighbors()) {
+            Console.WriteLine("\tNeighbors: { " + neighborsStr + " }.");
+        } else {
+            Console.WriteLine("\tNeighbors: { }.");
+        }
+        Console.WriteLine("\tnumNeighbors: " + this.neighbors.Count);
+        return "";
     }
 }
