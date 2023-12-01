@@ -41,11 +41,15 @@ public class Vertex {
         this.neighbors.Remove(neighbor);
     }
 
+    public List<Edge> GetNeighbors() {
+        return this.neighbors;
+    }
+
     override public string ToString() {
         Console.WriteLine(this.data + " -->");
         string neighborsStr = "";
         for (int i = 0; i < this.neighbors.Count; i++) {
-            neighborsStr += this.neighbors[i].GetDest().GetData() + ", ";
+            neighborsStr += this.neighbors[i].GetDest().GetData() + "(" + this.neighbors[i].GetWeight() + "), ";
         }
         if (this.HasNeighbors()) {
             Console.WriteLine("\tNeighbors: { " + neighborsStr + " }.");

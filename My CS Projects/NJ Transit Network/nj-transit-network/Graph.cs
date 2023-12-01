@@ -1,4 +1,6 @@
 ﻿namespace nj_transit_network;
+
+using System.Collections;
 using System.Collections.Generic;
 
 public class Graph {
@@ -70,6 +72,18 @@ public class Graph {
         return result;
     }
 
+    /*
+        Helper function GetEdgeIndexFromName(string data)
+    */
+    private int GetEdgeIndexFromName(string src, string dest) {
+        for (int i = 0; i < this.edges.Count; i++) {
+            if (edges[i].GetSrc().GetData().Equals(src) && edges[i].GetDest().GetData().Equals(dest)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public void AddVertex(string data) {
         Console.WriteLine("\nSuccessfully adding new vertex: { " + data + " }.");
         this.vertices.Add(new Vertex(data));
@@ -105,6 +119,41 @@ public class Graph {
         this.ToString();
     }
 
+    public void RemoveEdge(string src, string dest) {
+        if (this.IsEmpty()) {
+            Console.WriteLine("\n--<ERROR>-- cannot remove edge from empty graph.");
+        } else {
+            if (this.DoesExist(src) && this.DoesExist(dest)) {
+                Console.WriteLine("\nSuccessfully removing edge: { " + src + " --> " + dest + " }.");
+                this.vertices[this.GetVertexIndexFromName(src)].RemoveNeighbor(this.edges[this.GetEdgeIndexFromName(src, dest)]);
+                this.edges.Remove(this.edges[this.GetEdgeIndexFromName(src, dest)]);
+                numEdges--;
+            } else {
+                Console.WriteLine("\n--<ERROR>-- cannot remove edge, invalid params.");
+            }
+        }
+        this.ToString();
+    }
+
+    public void BreadthFirstTraversal() {
+        Console.WriteLine("\nBreadthFirstTraversal() called...");
+        Hashtable visited = new Hashtable();
+        Queue<Vertex> queue = new Queue<Vertex>();
+        visited.Add(this.vertices[0], 1);
+        queue.Enqueue(this.vertices[0]);
+        while (queue.Count != 0) {
+            Vertex frontVertex = queue.Peek();
+            Console.WriteLine(frontVertex.GetData());
+            queue.Dequeue();
+            for (int i = 0; i < frontVertex.GetNeighbors().Count; i++) {
+                if (!visited.ContainsKey(frontVertex.GetNeighbors()[i])) {
+                    visited.Add(frontVertex.GetNeighbors()[i], 1);
+                    queue.Enqueue(frontVertex.GetNeighbors()[i].GetDest());
+                }
+            }
+        }
+    }
+
     override public string ToString() {
         Console.WriteLine("NJ Transit Network -->");
         if (IsEmpty()) {
@@ -119,5 +168,14 @@ public class Graph {
         }
         Console.WriteLine("\tvertices: " + this.numVertices + "\n\tedges: " + this.numEdges);
         return "";
+    }
+
+    public void PrintGraph() {
+        Console.WriteLine("\nPrintGraph() called...");
+        for (int i = 0; i < this.vertices.Count; i++) {
+            Console.WriteLine(this.vertices[i]);
+        }
+        Console.WriteLine("vertices: " + this.numVertices);
+        Console.WriteLine("edges: " + this.numEdges);
     }
 }
