@@ -11,9 +11,9 @@
     justify-content: space-evenly;
 }
 
-.heroImg-con-welcome-div, .heroImg-con-col2 {
+.heroImg-con-welcome-div, .heroImg-con-contact-card {
     width: 33.5%;
-    margin: 60px auto;
+    margin: 55px auto;
 }
 
 .heroImg-con-welcome-div-title-con h1 {
@@ -82,44 +82,4 @@
 
 .heroImg-con-welcome-div-cwm-con button div span {
     margin: 0 5px;
-}
-
-.heroImg-con-col2 {
-    /* background-image: url('../../assets/hero-img-bg2.webp'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 10px 10px 5px #0d0d0d;
-    /* transition: all 0.3s ease-in-out; */
-    /* border: 2px solid transparent; */
-}
-
-.heroImg-con-col2 p {
-    font-size: 36px;
-    /* text-align: center; */
-    transition: all 0.3s ease-in-out;
-    cursor: none;
-    font-weight: 700;
-}
-
-.heroImg-con-col2 p:hover {
-    color: #0099ff;
-    transform: scale(1.1);
-    text-shadow: 5px 5px 2.5px #0099ff;
-}
-
-#heroImg-con-col2-p1 {
-    margin-left: 40px;
-}
-
-#heroImg-con-col2-p2 {
-    margin-left: 80px;
-}
-
-#heroImg-con-col2-p3 {
-    margin-left: 160px;
-}
-
-#heroImg-con-col2-p4 {
-    margin-left: 200px;
 }
