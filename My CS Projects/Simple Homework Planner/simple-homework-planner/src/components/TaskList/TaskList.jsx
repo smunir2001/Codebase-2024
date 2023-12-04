@@ -1,8 +1,15 @@
 import React from 'react';
+import Task from '../Task/Task';
 
-const TaskList = () => {
+const TaskList = ({tasks, onDelete}) => {
   return (
-    <div className='TaskList'>Task-List</div>
+    <div className='TaskList'>
+      {
+        tasks.map((task) => (
+          <Task key={task.id} task={task} onDelete={onDelete}/>
+        ))
+      };
+    </div>
   );
 };
 
