@@ -1,9 +1,12 @@
 import React from 'react';
-// import './App.css';
+import './App.css';
+import TaskList from './components/TaskList/TaskList';
 
 const App = () => {
     return (
-        <div className='App'></div>
+        <div className='App'>
+            <TaskList/>
+        </div>
     );
 };
 

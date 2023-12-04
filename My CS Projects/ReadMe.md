@@ -6,3 +6,6 @@ Sami Munir | Rutgers University | smunir2001@gmail.com
 ### AI Face Recognition - *C#, OpenCv4*
 ### My Login App - *ReactJS*
 ### The Odin Project - *HTML, CSS, JavaScript*
+### NJ Transit Network - *C#, graphs*
+### My Portfolio - *ReactJS*
+### Simple Homework Planner - *ReactJS*
