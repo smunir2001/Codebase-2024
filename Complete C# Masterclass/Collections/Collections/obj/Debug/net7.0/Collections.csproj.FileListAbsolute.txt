@@ -12,3 +12,17 @@
 /Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/Collections.pdb
 /Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/Collections.genruntimeconfig.cache
 /Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/ref/Collections.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/bin/Debug/net7.0/Collections
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/bin/Debug/net7.0/Collections.deps.json
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/bin/Debug/net7.0/Collections.runtimeconfig.json
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/bin/Debug/net7.0/Collections.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/bin/Debug/net7.0/Collections.pdb
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/Collections.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/Collections.AssemblyInfoInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/Collections.AssemblyInfo.cs
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/Collections.csproj.CoreCompileInputs.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/Collections.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/refint/Collections.dll
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/Collections.pdb
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/Collections.genruntimeconfig.cache
+/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/Debug/net7.0/ref/Collections.dll

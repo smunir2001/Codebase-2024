@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Collections/Collections/Collections.csproj",
+      "projectUniqueName": "/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/Collections.csproj",
       "projectName": "Collections",
-      "projectPath": "/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Collections/Collections/Collections.csproj",
+      "projectPath": "/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/Collections.csproj",
       "packagesPath": "/Users/samimunir/.nuget/packages/",
-      "outputPath": "/Users/samimunir/Desktop/samimunir/Codebase/Complete C# Masterclass/Collections/Collections/obj/",
+      "outputPath": "/Users/samimunir/Desktop/samimunir/Codebase-V2.0/Complete C# Masterclass/Collections/Collections/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/samimunir/.nuget/NuGet/NuGet.Config"

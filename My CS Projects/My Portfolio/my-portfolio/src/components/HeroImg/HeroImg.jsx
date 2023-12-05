@@ -2,7 +2,6 @@ import React from 'react';
 import './HeroImg.css';
 import { FaArrowRight } from "react-icons/fa";
 // import HeroImgBg2 from '../../assets/hero-img-bg2.webp';
-import ContactCard from '../ContactCard/ContactCard';
 
 const HeroImg = () => {
   return (
@@ -25,9 +24,6 @@ const HeroImg = () => {
             <div className='heroImg-con-welcome-div-cwm-con'>
                 <button type='button'><div><span>Let's Connect</span><FaArrowRight/></div></button>
             </div>
-        </div>
-        <div className='heroImg-con-contact-card'>
-            <ContactCard/>
         </div>
     </div>
   );
