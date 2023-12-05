@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
 import { FaHome } from "react-icons/fa";
 import { FaTasks } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
@@ -23,6 +24,7 @@ const Navbar = () => {
             <ul>
                 <li><a href="/"><FaGithub/></a></li>
                 <li><a href="/"><CiLinkedin/></a></li>
+                <li><a href="/"><CiMail/></a></li>
             </ul>
         </div>
         <div className='navbar-connectwm-button-con'>
