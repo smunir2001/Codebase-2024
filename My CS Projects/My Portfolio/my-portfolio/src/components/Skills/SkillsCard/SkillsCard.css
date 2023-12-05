@@ -1,0 +1,64 @@
+.skillsCard-con {
+    margin: 40px 0 0 0;
+    padding: 0;
+    color: #FFF;
+    width: 250px;
+}
+
+.skillsCard-con h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.skillsCard-con h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    text-align: center;
+    color: #0099ff;
+}
+
+.skillsCard-con p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.skillsCard-con ul {
+    /* margin: 20px 0 0 0; */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.skillsCard-con ul li {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.skillsCard-con ul li:hover {
+    color: #0099ff;
+}
+
+.skillsCard-con ul li div {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsCard-con ul li div span {
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

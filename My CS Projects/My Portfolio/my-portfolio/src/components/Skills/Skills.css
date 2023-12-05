@@ -1,0 +1,22 @@
+.skills-con {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: rgb(38,38,38);
+    background: linear-gradient(0deg, rgba(38,38,38,1) 0%, rgba(0,0,0,1) 100%);
+    /* background: #000; */
+}
+
+.skills-con-title-con {
+    margin: 0;
+    padding: 0;
+}
+
+.skills-con-skills-card-con {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
