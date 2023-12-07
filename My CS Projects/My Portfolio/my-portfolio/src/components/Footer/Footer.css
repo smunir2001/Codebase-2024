@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;700&display=swap');
+
 .footer-con {
     margin: 0;
     padding: 0;
     width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .footer-con-col1 {
     margin: 0;
     padding: 0;
+    width: 40%;
 }
 
 .footer-con-col1 h1 {
     margin: 0;
     padding: 0;
     font-size: 36px;
+    color: #0099ff;
 }
 
 .footer-con-col1 h2 {
@@ -30,9 +38,63 @@
 .footer-con-col2 {
     margin: 0;
     padding: 0;
+    width: 40%;
 }
 
-.footer-con-col2 form {
+.footer-con-col2 h1 {
     margin: 0;
     padding: 0;
+    font-size: 36px;
+    color: #0099ff;
+}
+
+#connect-with-me {
+    margin: 0;
+    padding: 0;
+}
+
+#connect-with-me fieldset {
+    margin: 0 0 20px 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+#connect-with-me input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 2px solid #0099ff;
+    background: transparent;
+    padding: 5px 10px;
+}
+
+#connect-with-me input::placeholder {
+    color: #FFF;
+}
+
+#connect-with-me textarea {
+    margin: 0;
+    padding: 5px 10px;
+    height: 100px;
+    width: 400px;
+    outline: none;
+    border: 2px solid #0099ff;
+    background: transparent;
+}
+
+#connect-with-me textarea::placeholder {
+    font-family: 'Smooch Sans', sans-serif;
+    color: #FFF;
+}
+
+#cwm-submit-btn {
+    margin-left: 25%;
+    padding: 5px 10px;
+    outline: none;
+    background: transparent;
+    color: #FFF;
+    border: 2px solid #0099ff;
+    font-size: 18px;
+    text-align: center;
 }

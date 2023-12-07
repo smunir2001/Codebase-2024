@@ -12,14 +12,26 @@ const Footer = () => {
                 Programming, I am confident we can create something exceptional.
                 Send a message, let's forge code!
             </p>
+            <p>
+                Feel free to fill out the form on the right to get in touch!
+            </p>
+            <div className='cwm-icons-con'></div>
         </div>
         <div className='footer-con-col2'>
-            <form>
-                <label for='email'>Email</label>
-                <input type='text' id='email' name='email' placeholder='Your email'/>
-                <br></br>
-                <label for='cwm-mssg'>Send a message</label>
-                <input type='text' id='cwm-mssg' name='cwm-mssg' placeholder="Let's connect..."/>
+            <h1>Connect with me!</h1>
+            <form id='connect-with-me' action='' method='post'>
+                <fieldset>
+                    <input placeholder='Your name' type='text' tabIndex='1' required/>
+                </fieldset>
+                <fieldset>
+                    <input placeholder='Your Email Address' type='email' tabIndex='2' required/>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder='Type your Message Here...' tabIndex='5' required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name='submit' type='submit' id='cwm-submit-btn'>Let's connect</button>
+                </fieldset>
             </form>
         </div>
     </div>
