@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;700&display=swap');
+* {
+    font-family: 'Smooch Sans', sans-serif;
+}
 
 .footer-con {
     margin: 0;
@@ -35,6 +38,15 @@
     font-size: 24px;
 }
 
+.cwm-icons-con {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 36px;
+    color: #0099ff;
+}
+
 .footer-con-col2 {
     margin: 0;
     padding: 0;
@@ -63,33 +75,40 @@
 #connect-with-me input {
     margin: 0;
     padding: 0;
+    width: 150px;
     outline: none;
     border: 2px solid #0099ff;
     background: transparent;
     padding: 5px 10px;
+    color: #0099ff;
 }
 
 #connect-with-me input::placeholder {
     color: #FFF;
+    font-size: 14px;
 }
 
 #connect-with-me textarea {
     margin: 0;
     padding: 5px 10px;
     height: 100px;
-    width: 400px;
+    width: 300px;
     outline: none;
     border: 2px solid #0099ff;
     background: transparent;
+    color: #0099ff;
 }
 
 #connect-with-me textarea::placeholder {
-    font-family: 'Smooch Sans', sans-serif;
     color: #FFF;
+    font-size: 14px;
+    color: #0099ff;
 }
 
+
+
 #cwm-submit-btn {
-    margin-left: 25%;
+    margin: 0;
     padding: 5px 10px;
     outline: none;
     background: transparent;

@@ -1,5 +1,10 @@
 import React from 'react';
 import './Footer.css';
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,7 +20,13 @@ const Footer = () => {
             <p>
                 Feel free to fill out the form on the right to get in touch!
             </p>
-            <div className='cwm-icons-con'></div>
+            <div className='cwm-icons-con'>
+                <FaGithub/>
+                <FaLinkedin/>
+                <FaInstagram/>
+                <FaTwitter/>
+                <FaFacebook/>
+            </div>
         </div>
         <div className='footer-con-col2'>
             <h1>Connect with me!</h1>
@@ -27,7 +38,7 @@ const Footer = () => {
                     <input placeholder='Your Email Address' type='email' tabIndex='2' required/>
                 </fieldset>
                 <fieldset>
-                    <textarea placeholder='Type your Message Here...' tabIndex='5' required></textarea>
+                    <textarea placeholder='Type your Message Here...' maxLength='500' tabIndex='5' required></textarea>
                 </fieldset>
                 <fieldset>
                     <button name='submit' type='submit' id='cwm-submit-btn'>Let's connect</button>
