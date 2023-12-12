@@ -17,6 +17,8 @@ public class LLQueue {
 
     private void PrintDS() {
         if (IsEmpty()) {
+            Console.Write("\t\tHEAD <-> NULL\n");
+        } else {
             Console.Write("\t\tHEAD <-> ");
             Node currentNode = this.head;
             while (currentNode != null) {
@@ -39,5 +41,71 @@ public class LLQueue {
         Console.WriteLine("\tHEAD pointer: " + headPointer);
         Console.WriteLine("\tTAIL pointer: " + tailPointer);
         PrintDS();
+    }
+
+    public void Enqueue(int data) {
+        Console.WriteLine("\nEnqueue(" + data + ") called...");
+        if (IsEmpty()) {
+            head = tail = new Node();
+            head.SetData(data);
+            head.SetNext(null);
+            head.SetPrev(null);
+            totalElements = 1;
+            headPointer = tailPointer = 0;
+        } else {
+            if (head.GetNext() == null) {
+                Node newNode = new Node();
+                newNode.SetData(data);
+                newNode.SetNext(null);
+                newNode.SetPrev(head);
+                tail = newNode;
+                head.SetNext(newNode);
+                totalElements++;
+                tailPointer++;
+            } else {
+                Node tempHead = head;
+                Node currentNode = tempHead;
+                while (currentNode != null) {
+                    if (currentNode.GetNext() == null) {
+                        break;
+                    }
+                    currentNode = currentNode.GetNext();
+                }
+                Node newNode = new Node();
+                newNode.SetData(data);
+                newNode.SetPrev(currentNode);
+                newNode.SetNext(null);
+                currentNode.SetNext(newNode);
+                tail = currentNode.GetNext();
+                totalElements++;
+                tailPointer++;
+            }
+        }
+        PrintStats();
+    }
+
+    public void Dequeue() {
+        if (IsEmpty()) {
+            Console.WriteLine("\nDequeue() called...");
+            Console.WriteLine("\t--<ERROR>-- linkedlist is empty.");
+        } else {
+            Console.WriteLine("\nDequeue(" + head.GetData() + ") called...");
+            if (head.GetNext() == null) {
+                head = tail = null;
+                totalElements = 0;
+                headPointer = tailPointer = -1;
+            } else {
+                head.GetNext().SetPrev(null);
+                head = head.GetNext();
+                totalElements--;
+                tailPointer--;
+            }
+        }
+        PrintStats();
+    }
+
+    override public string ToString() {
+        PrintDS();
+        return "";
     }
 }

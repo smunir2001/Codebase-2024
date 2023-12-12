@@ -13,5 +13,8 @@ public class Program {
     public static void Main(string[] args) {
         Console.WriteLine("Linkedlist Queues - C#");
         Console.WriteLine("----------------------\n");
+
+        LLQueue ll_queue = new LLQueue();
+        ll_queue.ToString();
     }
 }
