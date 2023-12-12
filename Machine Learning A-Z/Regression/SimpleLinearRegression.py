@@ -1,7 +1,7 @@
 # Sami Munir
 # Machine Learning A-Z
 # Regression
-# Main.py
+# SimpleLinearRegression.py
 
 print('\nRegression')
 

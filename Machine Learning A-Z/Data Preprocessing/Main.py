@@ -39,12 +39,12 @@ from sklearn.preprocessing import OneHotEncoder
 # - Encoding the independent variable
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')
 X = np.array(ct.fit_transform(X))
-print('\nX -->\n', X)
+print('\nX (encoded) -->\n', X)
 # - Encoding the dependent variable vector
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 y = le.fit_transform(y)
-print('\ny -->\n', y)
+print('\ny (encoded) -->\n', y)
 
 # Splitting the data set into the Training set & Test set
 from sklearn.model_selection import train_test_split
@@ -58,6 +58,6 @@ print('\ny_test -->\n', y_test)
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])
-print('\nX_train -->\n', X_train)
+print('\nX_train (feature scaled) -->\n', X_train)
 X_test[:, 3:] = sc.transform(X_test[:, 3:])
-print('\nX_test -->\n', X_test)
+print('\nX_test (feature scaled) -->\n', X_test)
